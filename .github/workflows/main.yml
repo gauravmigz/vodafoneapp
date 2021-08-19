@@ -17,8 +17,7 @@ jobs:
   First_test:
     runs-on: windows-latest
     steps:
-    -name: Print First Test
+    - name: Print First Test
       run: |
         echo "Windows ABCD"
         echo "Testing WIndows"
-        
