@@ -1,0 +1,24 @@
+# Writing workflows for main.yml
+# This is main.yml
+
+name: DevSecOps Basic Pipeline
+
+on: [push]
+
+jobs:
+  First_build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print a first build
+      run: |
+        echo "ABCD and $PATH"
+        echo "Published Path"
+  
+  First_test:
+    runs-on: windows-latest
+    steps:
+    -name: Print First Test
+      run: |
+        echo "Windows ABCD"
+        echo "Testing WIndows"
+        
